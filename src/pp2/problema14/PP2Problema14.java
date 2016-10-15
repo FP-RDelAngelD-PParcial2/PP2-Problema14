@@ -18,18 +18,22 @@ public class PP2Problema14 {
         tabla=llenarTabla(tabla);
         mostrarTabla(tabla);
     }
-    public static int[][] llenarTabla(int[][]tabla){
-        for (int i=0; i<10; i++){ //aumenta i una vez
-            for (int j=0; j<10; j++){ //aumenta j una vez (hasta llegar a 10)
-                tabla[i][j]=i*j;
+    public static int[][] llenarTabla(int[][]a){
+        for (int i=0; i<a.length; i++){ //aumenta i una vez
+            for (int j=0; j<a.length; j++){ //aumenta j una vez (hasta llegar al tamaño del arreglo)
+                if(i==j){
+                    a[i][j]=1;
+                }else{
+                    a[i][j]=0;
+                }
             }
         }
-       return tabla;
+       return a;
     }
     public static void mostrarTabla(int [][]b){
-        for(int i=0; i<10; i++){
-         for(int j=0; j<10; j++){ 
-              System.out.print(i + "x" + j + "=" + b[i][j] + "\n"); 
+        for(int i=0; i<b.length; i++){
+         for(int j=0; j<b.length; j++){ 
+              System.out.print(b[i][j]); 
          }
        }      
     }
