@@ -39,10 +39,11 @@ public class PP2Problema14 {
     public static void mostrarTabla(int [][]b){
         for(int i=0; i<b.length; i++){ //Mientras que i sea menor que el tamaño de la matriz
          for(int j=0; j<b.length; j++){ //Mientras que j sea menor al tamaño de la amtriz
-              System.out.print(b[i][j]); //Se imprimie el valor de la posicion [i][j]
+              System.out.print("[" + b[i][j] + "]"); //Se imprimie el valor de la posicion [i][j]
                                          //Por ejemplo, i sera 0 y j sera 0, el programa imprimira
                                          //lo que hay en la posicion [0][0] que es 1 y seguira
          }
+         System.out.print("\n");
        }      
     }
 }
